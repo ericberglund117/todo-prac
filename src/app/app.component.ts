@@ -25,7 +25,6 @@ export class AppComponent {
   }
 
   done = (finishedTask: Task) => {
-    alert(`the task ${finishedTask.title} is done`)
     finishedTask.isDone = true
   }
 }
