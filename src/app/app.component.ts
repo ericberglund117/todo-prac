@@ -24,8 +24,8 @@ export class AppComponent {
    if (confirmation) this.tasks = this.tasks.filter(task => task !== existingTask)
   }
 
-  done = (finishedTask: Task) => {
-    finishedTask.isDone = true
+  toggleIsDone = (finishedTask: Task) => {
+    finishedTask.isDone = !finishedTask.isDone
   }
 }
 
