@@ -15,7 +15,7 @@ export class AppComponent {
     'Shop for the party'
   ];
 
-  add = () => {
-    
+  add = (newTask: string) => {
+    this.tasks.push(newTask)
   }
 }
