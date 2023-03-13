@@ -23,15 +23,15 @@ export class AppComponent {
    let confirmation = confirm(`Are you sure you want to remove the following task? \n "${existingTask.title}"`)
    if (confirmation) this.tasks = this.tasks.filter(task => task !== existingTask)
   }
-
-  toggleIsDone = (finishedTask: Task) => {
-    finishedTask.isDone = !finishedTask.isDone
-  }
 }
 
 class Task {
   constructor(public title: string) {
 
+  }
+
+  toggleIsDone = () => {
+    this.isDone = !this.isDone
   }
 
   public isDone = false;
