@@ -8,6 +8,9 @@ import { CalendarComponent } from './calendar.component';
   declarations: [
     CalendarComponent
   ],
+  exports: [
+    CalendarComponent
+  ],
   imports: [
     CommonModule
   ]
