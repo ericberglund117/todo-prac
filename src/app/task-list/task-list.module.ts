@@ -7,6 +7,9 @@ import { TaskListComponent } from './task-list.component';
   declarations: [
     TaskListComponent
   ],
+  exports: [
+    TaskListComponent
+  ],
   imports: [
     CommonModule
   ]
